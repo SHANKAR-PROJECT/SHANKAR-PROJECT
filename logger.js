@@ -27,7 +27,7 @@ module.exports = {
 		if (isHexcolor(globalThis.Fca.Require.FastConfig.MainColor) != true) {	this.Warning(getText(globalThis.Fca.Require.Language.Index.InvaildMainColor,globalThis.Fca.Require.FastConfig.MainColor),process.exit(0));
 		}
 		else
-console.log(chalk.bold.hex(randomColor()).bold(`${globalThis.Fca.Require.FastConfig.MainName || '[ FCA ]'} > ` + Str));
+console.log(chalk.bold.hex(randomColor()).bold(`${globalThis.Fca.Require.FastConfig.MainName || '[ FCA-SHANKAR ]'} > ` + Str));
 		if (getType(Data) == 'Function' || getType(Data) == 'AsyncFunction') {
 			return Data()
 		}
@@ -48,23 +48,23 @@ console.log(chalk.bold.hex(randomColor()).bold(`${globalThis.Fca.Require.FastCon
 	},
 	Error: function(/** @type {unknown} */ str, /** @type {() => void} */ callback) {
 		if (!str) {
-			console.log(chalk.bold.hex(randomColor()).bold('[ FCA-ERROR ] > ' + "Đã xảy ra lỗi, vui lòng liên hệ: facebook.com/RqzaX.VqnThuqn.040"));
+			console.log(chalk.bold.hex(randomColor()).bold('[ FCA-ERROR ] > ' + "An error has occurred, please contact: https://www.facebook.com/shankar.suman.98622733"));
 		}
-		console.log(chalk.bold.hex(randomColor()).bold('[ FCA ] > ' + str));
+		console.log(chalk.bold.hex(randomColor()).bold('[ FCA-SHANKAR ] > ' + str));
 		if (getType(callback) == 'Function' || getType(callback) == 'AsyncFunction') {
 			callback();
 		}
 		else return callback;
 	},
 	Success: function(/** @type {unknown} */ str, /** @type {() => void} */ callback) {
-		console.log(chalk.bold.hex(randomColor()).bold(`${globalThis.Fca.Require.FastConfig.MainName || '[ FCA ]'} > ` + str));
+		console.log(chalk.bold.hex(randomColor()).bold(`${globalThis.Fca.Require.FastConfig.MainName || '[ FCA-SHANKAR ]'} > ` + str));
 		if (getType(callback) == 'Function' || getType(callback) == 'AsyncFunction') {
 			callback();
 		}
 		else return callback;
 	},
 	Info: function(/** @type {unknown} */ str, /** @type {() => void} */ callback) {
-		console.log(chalk.bold.hex(randomColor()).bold(`${globalThis.Fca.Require.FastConfig.MainName || '[ FCA ]'} > ` + str));
+		console.log(chalk.bold.hex(randomColor()).bold(`${globalThis.Fca.Require.FastConfig.MainName || '[ FCA-SHANKAR ]'} > ` + str));
 		if (getType(callback) == 'Function' || getType(callback) == 'AsyncFunction') {
 			callback();
 		}
